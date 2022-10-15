@@ -1,0 +1,81 @@
+.header
+{
+    margin: 0 auto;
+    background-color: var(--color-grey);
+    width: 110rem;
+    border-radius: 20rem;
+
+    &__navbar
+    {
+        margin: 5rem;
+        padding: .6rem;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-logo
+        {
+            margin-right: auto;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &__name
+            {
+                font-size: 2rem;
+                color: var(--color-white);
+                font-weight: 700;
+                margin-left: 1.6rem;
+            }
+        }
+
+        &-content
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            ul 
+            {
+                display: flex;
+            }
+
+            &__item
+            {
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                margin-right: 3rem;
+            }
+
+            &__button
+            {
+                border: 1px solid var(--color-white);
+                border-radius: 5rem;
+                padding: 2rem 4rem;
+                color: var(--color-white);
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                background: transparent;
+                width: max-content;
+                text-align: center;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &-download
+                {
+                    width: 1.7rem;
+                    height: 1.7rem;
+                    fill: var(--color-white);
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+
+}

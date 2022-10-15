@@ -1,0 +1,97 @@
+:root {
+  --color-primary: #68e0cf;
+  --color-bg: #373b40;
+  --color-white: #fff;
+  --color-grey: #585d65;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.header {
+  margin: 0 auto;
+  background-color: var(--color-grey);
+  width: 110rem;
+  border-radius: 20rem;
+}
+.header__navbar {
+  margin: 5rem;
+  padding: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__navbar-logo {
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__navbar-logo__name {
+  font-size: 2rem;
+  color: var(--color-white);
+  font-weight: 700;
+  margin-left: 1.6rem;
+}
+.header__navbar-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__navbar-content ul {
+  display: flex;
+}
+.header__navbar-content__item {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-right: 3rem;
+}
+.header__navbar-content__button {
+  border: 1px solid var(--color-white);
+  border-radius: 5rem;
+  padding: 2rem 4rem;
+  color: var(--color-white);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: transparent;
+  width: max-content;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__navbar-content__button-download {
+  width: 1.7rem;
+  height: 1.7rem;
+  fill: var(--color-white);
+  margin-left: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
