@@ -52,6 +52,7 @@ a {
   margin: 5rem;
   padding: 0.6rem;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .header__navbar-logo {
@@ -81,9 +82,6 @@ a {
   margin-right: 3rem;
 }
 .header__navbar-content__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border: 1px solid var(--color-white);
   border-radius: 5rem;
   padding: 2rem 4rem;
@@ -94,6 +92,9 @@ a {
   background: transparent;
   width: max-content;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header__navbar-content__button-download {
   width: 1.7rem;
@@ -143,12 +144,20 @@ main {
 
 .showcase__content {
   margin: 4rem;
+  position: relative;
 }
 .showcase__content-heading {
+  background-color: var(--color-bg);
+  margin-left: -16rem;
+  z-index: 2;
+  padding: 5rem;
+  border-radius: 16rem;
+  margin-bottom: 2rem;
+}
+.showcase__content-heading__h1 {
   font-size: 5rem;
   font-weight: 600;
   color: var(--color-white);
-  margin-bottom: 3rem;
 }
 .showcase__content-description__h4 {
   font-size: 1.4rem;

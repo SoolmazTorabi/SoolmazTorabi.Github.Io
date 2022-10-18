@@ -18,13 +18,22 @@ main
     &__content
     {
         margin: 4rem;
-
+        position: relative;
         &-heading
         {
-            font-size: 5rem;
-            font-weight: 600;
-            color: var(--color-white);
-            margin-bottom: 3rem;
+            background-color: var(--color-bg);
+            margin-left: -16rem;
+            z-index: 2;
+            padding: 5rem;
+            border-radius: 16rem;
+            margin-bottom: 2rem;
+
+            &__h1
+            {
+                font-size: 5rem;
+                font-weight: 600;
+                color: var(--color-white);
+            }
         }
 
         &-description
