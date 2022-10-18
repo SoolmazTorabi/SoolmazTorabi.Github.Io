@@ -5,13 +5,20 @@
     width: 110rem;
     border-radius: 20rem;
 
+    position: sticky;
+    top: 5rem;
+    z-index: 900;
+
     &__navbar
     {
-        margin: 5rem;
+         margin: 5rem;
         padding: .6rem;
         
         display: flex;
+<<<<<<< Updated upstream
         justify-content: center;
+=======
+>>>>>>> Stashed changes
         align-items: center;
 
         &-logo
