@@ -39,17 +39,59 @@ a {
   color: var(--color-white);
 }
 
+h2 {
+  font-size: 5.5rem;
+  font-weight: 800;
+  color: var(--color-white);
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 7rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin-bottom: 3rem;
+}
+
+p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--color-white);
+  margin-bottom: 2rem;
+  line-height: 2.6rem;
+}
+
+.btn {
+  outline: none;
+  border: 1px solid var(--color-grey);
+  color: var(--color-white);
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: transparent;
+  padding: 2rem 3rem;
+  border-radius: 4rem;
+}
+
 .header {
-  margin: 0 auto;
+  margin: 0 5rem;
   background-color: var(--color-grey);
   width: 110rem;
   border-radius: 20rem;
-  position: sticky;
+  position: fixed;
   top: 5rem;
   z-index: 900;
 }
 .header__navbar {
-  margin: 5rem;
+  margin: 0.7rem 0.5rem 0.7rem 5rem;
   padding: 0.6rem;
   display: flex;
   justify-content: center;
@@ -104,7 +146,11 @@ a {
 }
 
 .aside {
-  width: 5vw;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  right: 0;
+  width: 8vw;
   height: 100vh;
   border-left: 1px solid var(--color-grey);
 }
@@ -112,12 +158,12 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
+  margin-right: 2rem;
 }
 .aside__icons-link {
   border: 1px solid var(--color-grey);
   border-radius: 50%;
-  padding: 0.5rem;
+  padding: 0.2rem;
   margin-bottom: 1rem;
 }
 
@@ -130,20 +176,32 @@ a {
 }
 
 .bg {
+  position: sticky;
   background-image: url(../../img/man.jpg);
   background-size: cover;
   width: 45%;
   height: 100vh;
   filter: grayscale(100%);
   mix-blend-mode: luminosity;
+  position: sticky;
 }
 
 main {
   flex: 1;
+  position: relative;
+}
+
+section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  height: 0.1rem;
+  background-color: var(--color-grey);
 }
 
 .showcase__content {
-  margin: 4rem;
+  margin: 20rem 4rem;
   position: relative;
 }
 .showcase__content-heading {
@@ -171,21 +229,102 @@ main {
   color: var(--color-white);
   margin-bottom: 2rem;
 }
-.showcase__content-description__btn {
-  outline: none;
-  border: 1px solid var(--color-grey);
-  color: var(--color-white);
-  font-size: 1.2rem;
-  font-weight: 700;
-  background-color: transparent;
-  padding: 2rem 3rem;
-  border-radius: 4rem;
-}
 .showcase__content-description__btn-icon {
   width: 1rem;
   height: 1rem;
   fill: var(--color-white);
   margin-left: 0.5rem;
+}
+
+.about {
+  margin: 4rem;
+}
+.about__list {
+  display: grid;
+  grid-template-columns: repeat(2, 25rem);
+}
+.about__list-item {
+  margin-bottom: 1rem;
+}
+.about__list-item span:first-child {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+.about__list-item span:last-child {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+.services {
+  margin: 4rem;
+}
+.services__box {
+  display: grid;
+  grid-template-columns: repeat(2, 25rem);
+  grid-gap: 2rem;
+}
+.services__box-card__icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  fill: var(--color-primary);
+  margin-bottom: 1.5rem;
+}
+
+.pricing {
+  padding: 4rem;
+}
+.pricing__box {
+  display: grid;
+  grid-template-columns: repeat(2, 25rem);
+  grid-gap: 2rem;
+}
+.pricing__box-card {
+  width: max-content;
+}
+.pricing__box-card__icon {
+  height: 3.2rem;
+  width: 3.2rem;
+  fill: var(--color-primary);
+  margin-bottom: 2rem;
+}
+.pricing__box-card__number {
+  margin-bottom: 2rem;
+}
+.pricing__box-card__number span:first-child {
+  font-size: 5.4rem;
+  font-weight: 800;
+  color: var(--color-white);
+  position: relative;
+}
+.pricing__box-card__number span:last-child {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgb(153, 153, 153);
+}
+.pricing__box-card__number span:first-child::before {
+  content: "$";
+  position: absolute;
+  top: 0;
+  left: -1.5rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: rgb(153, 153, 153);
+}
+.pricing__box-card__para p:nth-child(4) {
+  text-decoration: line-through;
+  color: rgb(153, 153, 153);
+}
+.pricing__box-card__para p:nth-child(5) {
+  text-decoration: line-through;
+  color: rgb(153, 153, 153);
+  margin-bottom: 3rem;
+}
+
+.experience {
+  padding: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
