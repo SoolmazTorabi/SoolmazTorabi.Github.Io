@@ -1,13 +1,17 @@
 .header
 {
-    margin: 0 auto;
+    margin: 0 5rem;
     background-color: var(--color-grey);
     width: 110rem;
     border-radius: 20rem;
 
+    position: fixed;
+    top: 5rem;
+    z-index: 900;
+
     &__navbar
     {
-        margin: 5rem;
+        margin: .7rem .5rem .7rem 5rem;
         padding: .6rem;
         
         display: flex;

@@ -17,5 +17,13 @@ body
 {
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
-    position: relative;
+    background-color: var(--color-bg);
+}
+
+.container
+{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
 }
